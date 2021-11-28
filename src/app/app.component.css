@@ -1,0 +1,9 @@
+.menu {
+  display: flex;
+  align-content: center;
+  padding-bottom: 0.5em;
+}
+
+.menu > div {
+  padding-left: 0.5em;
+}

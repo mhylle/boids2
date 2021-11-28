@@ -1,0 +1,8 @@
+.menu {
+  display: flex;
+  align-content: center;
+  padding-bottom: 1em;
+}
+.menu > div {
+  margin: 0 10px;
+}

@@ -1,20 +1,8 @@
+<button (click)="updateBoids()">Update</button>
 <div class="container">
   <div *ngFor="let x of maxX | number" class="column">
     <div class="row">
-      <div *ngFor="let y of maxY | number">
-        {{x}}, {{y}}
-        <!--      <div *ngFor="let boid of boids"-->
-        <!--        [ngClass]="{-->
-        <!--          'boid': true,-->
-        <!--          'boid-alive': boid.alive,-->
-        <!--          'boid-dead': !boid.alive-->
-        <!--        }"-->
-        <!--        [style.left.px]="boid.x"-->
-        <!--        [style.top.px]="boid.y"-->
-        <!--        [style.width.px]="boid.width"-->
-        <!--        [style.height.px]="boid.height"-->
-        <!--        [style.transform]="'rotate(' + boid.angle + 'deg)'">-->
-        <!--      </div>-->
+      <div *ngFor="let y of maxY | number" class="element" [ngClass]="{boid: getBoid(x, y)=== 'boid'}">
       </div>
     </div>
   </div>

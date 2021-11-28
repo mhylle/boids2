@@ -4,5 +4,15 @@
 
 .column {
   /*display: flex;*/
+}
 
+.element {
+  width: 4px;
+  height: 4px;
+  background-color: white;
+  /*border: 1px solid darkgray;*/
+}
+
+.boid {
+  background-color: red;
 }

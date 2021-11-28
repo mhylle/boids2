@@ -1,26 +1,54 @@
 {
+  "gene": [
+    {
+      "id": "19116973-5da0-aba3-449b-5cd00e062912",
+      "behaviour": {
+        "id": "mub001"
+      }
+    },
+    {
+      "id": "41aefcaa-fc6b-48ad-903e-b1f2f4af0a00",
+      "behaviour": {
+        "id": "mdb001"
+      }
+    },
+    {
+      "id": "d237ac7b-9f4b-6a5f-3cfa-b51cc58e278b",
+      "behaviour": {
+        "id": "mlb001"
+      }
+    },
+    {
+      "id": "6740db44-7442-7319-41ac-0e17110be63c",
+      "behaviour": {
+        "id": "mrb001"
+      }
+    }
+  ],
   "boids": [
     {
-      "id": "742c3622-0b41-5fb9-53f5-0b713a6ff3d1",
+      "id": "0486edf6-0bc9-5953-d411-37c85131899e",
       "position": {
-        "x": 63.21686173962491,
-        "y": 59.80764986491245
+        "x": 8,
+        "y": 24
       },
       "velocity": {
-        "x": 4.441987618217327,
-        "y": 4.051699112565881
+        "x": 0.639791839612375,
+        "y": 0.2765210411153678
       },
       "age": 0,
       "energy": 100,
       "genome": {
-        "id": "ced9fe0a-4ac3-23e4-6e44-2d240ef31042",
+        "id": "6d63ddfc-25b4-f656-edd8-aa691f2fcc2a",
         "chromosomes": [
           {
-            "id": "6096ab73-c1db-e1b9-8a3a-e812ca649d4e",
+            "id": "fa4eba4d-3dfa-049d-6fb3-acd8ab36a2f0",
             "genes": [
               {
-                "id": "196f2db0-48e5-1888-5d95-e4f82adc9d0a",
-                "behaviour": {}
+                "id": "41aefcaa-fc6b-48ad-903e-b1f2f4af0a00",
+                "behaviour": {
+                  "id": "mdb001"
+                }
               }
             ]
           }
@@ -28,26 +56,57 @@
       }
     },
     {
-      "id": "a93e6760-158b-0afc-7a20-0d2644e5a12c",
+      "id": "bfa4fa53-1867-7673-6175-efd37b080975",
       "position": {
-        "x": 35.141269116149964,
-        "y": 13.912130790858534
+        "x": 23,
+        "y": 76
       },
       "velocity": {
-        "x": 5.877579357987361,
-        "y": 9.48030385815384
+        "x": 0.3020991968844311,
+        "y": 1.47770842906013
       },
       "age": 0,
       "energy": 100,
       "genome": {
-        "id": "47a84499-fc30-de25-f8a8-30792342ebcc",
+        "id": "2c94c231-1c31-60ba-5240-e8afdf640e0a",
         "chromosomes": [
           {
-            "id": "7c47b9c8-ed7d-2f1d-504c-82eefb271718",
+            "id": "ffac987c-89d3-a0d2-a4f2-0087ae399c2e",
             "genes": [
               {
-                "id": "fa34031a-7f96-8401-d473-0fdd8aebc617",
-                "behaviour": {}
+                "id": "6740db44-7442-7319-41ac-0e17110be63c",
+                "behaviour": {
+                  "id": "mrb001"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "77359442-87ad-17a0-babc-c9aaaf81cf55",
+      "position": {
+        "x": 66,
+        "y": 86
+      },
+      "velocity": {
+        "x": 0.5204689995666971,
+        "y": 0.28828328338679565
+      },
+      "age": 0,
+      "energy": 100,
+      "genome": {
+        "id": "4674b93c-0e48-fdfc-652b-eacd552f56ad",
+        "chromosomes": [
+          {
+            "id": "3f891a96-8bdd-9048-f357-eb70fd0eb60f",
+            "genes": [
+              {
+                "id": "41aefcaa-fc6b-48ad-903e-b1f2f4af0a00",
+                "behaviour": {
+                  "id": "mdb001"
+                }
               }
             ]
           }
