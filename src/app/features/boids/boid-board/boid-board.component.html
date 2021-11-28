@@ -1,8 +1,9 @@
 <button (click)="updateBoids()">Update</button>
-<div class="container">
+
+<div class="container" *ngIf="boids$|async as boid">
   <div *ngFor="let x of maxX | number" class="column">
     <div class="row">
-      <div *ngFor="let y of maxY | number" class="element" [ngClass]="{boid: getBoid(x, y)=== 'boid'}">
+      <div *ngFor="let y of maxY | number" class="element" [ngClass]="{boid: (getBoid(x, y)|async)=== 'boid'}">
       </div>
     </div>
   </div>

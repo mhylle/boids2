@@ -3,10 +3,12 @@ import {GeneService} from '../../../shared/services/gene.service';
 import {Gene} from '../../../shared/model/gene.model';
 import {UUID} from 'angular2-uuid';
 import {MoveLeftBehaviour} from '../../../shared/behaviours/movement/move-left.behaviour';
-import {MoveRightGene} from '../../../shared/genes/movement/move-right.gene';
 import {MoveDownBehaviour} from '../../../shared/behaviours/movement/move-down.behaviour';
 import {MoveUpBehaviour} from '../../../shared/behaviours/movement/move-up.behaviour';
 import {MoveRightBehaviour} from '../../../shared/behaviours/movement/move-right.behaviour';
+import * as fromGenes from '../store/reducer/gene.reducer';
+import {Store} from '@ngrx/store';
+import {LoadGenes} from '../store/action/gene.actions';
 
 @Component({
   selector: 'app-gene-admin',
@@ -15,7 +17,7 @@ import {MoveRightBehaviour} from '../../../shared/behaviours/movement/move-right
 })
 export class GeneAdminComponent implements OnInit {
 
-  constructor(private geneService: GeneService) {
+  constructor(private geneService: GeneService, private store: Store<fromGenes.GeneState>) {
   }
 
   ngOnInit(): void {
@@ -43,5 +45,9 @@ export class GeneAdminComponent implements OnInit {
     }
     this.geneService.createGene(gener);
 
+  }
+
+  loadGenes() {
+    this.store.dispatch(LoadGenes())
   }
 }
